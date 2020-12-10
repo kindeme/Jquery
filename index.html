@@ -9,13 +9,22 @@
 </head>
 
 <body>
-  <div id='main'></div>
-
-  <div class="special">Hello world</div>
-  <span></span>
-  <p></p>
-  <a href="#"></a>
-
+ <form>
+<input type="button" value="Input Button"><br>
+<input type="file"><br>
+<input type="hidden"><br>
+<input type="password"><br>
+<input type="radio"><br>
+<input type="reset"><br>
+<input type="submit"><br>
+<input type="text"><br>
+<select>
+  <option> Option</option>
+</select> <br>
+<textarea></textarea> <br>
+<button> Button</button>
+<input type="image" src="pexels.jpg" width="100px">
+ </form>
   <!-- link jquery with cdn (jquery cdn google) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <!-- link directly jquery -->
@@ -23,7 +32,8 @@
   <script>
     $(document).ready(function () {
      
-     
+     $(':input').addClass('border');
+     $('input').css("background-color","green");
     });
   </script>
 </body>
